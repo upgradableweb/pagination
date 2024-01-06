@@ -1,0 +1,19 @@
+{
+  "name": "@upgradableweb/pagination",
+  "version": "1.0.0",
+  "description": "conpact pagination for react, vite, next js and related projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "pagination",
+    "react-pagination"
+  ],
+  "author": "Bharat",
+  "license": "MIT",
+  "dependencies": {
+    "@upgradableweb/icons": "^1.0.0",
+    "@upgradableweb/tooltip": "^1.0.1"
+  }
+}
