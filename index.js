@@ -1,5 +1,3 @@
-import { RightArrow } from '@upgradableweb/icons'
-import Tooltip from '@upgradableweb/tooltip'
 
 export default function Pagination({ pagination, setPagination, className, ...props }) {
     const { skip, total, limit } = pagination
@@ -9,27 +7,25 @@ export default function Pagination({ pagination, setPagination, className, ...pr
     }
 
     return (
-        <div {...props} className={`df aic jce gap p bg my-4 mx-1 ${className}`}>
+        <div {...props} className={`df aic jce gap p bg my mx-1 ${className}`}>
             <TotalPageNo
                 skip={Math.min(total, next)}
                 total={total}
             />
-            <Tooltip content={next >= total ? `Only ${total} records` : 'Next'}>
-                <button
-                    disabled={next >= total}
-                    onClick={onNext}
-                    className='icon-btn'>
-                    <RightArrow />
-                </button>
-            </Tooltip>
+            <button
+                disabled={next >= total}
+                onClick={onNext}
+                className='pagination-btn'>
+                View More
+            </button>
         </div>
     )
 }
 
 function TotalPageNo({ total, skip }) {
     return (
-        <Tooltip content={<span className='nowrap'>Records {skip} | Total {total}</span>}>
-            <strong className='select-none'>{skip}/{total}</strong>
-        </Tooltip>
+        // <Tooltip content={<span className='nowrap'>Records {skip} | Total {total}</span>}>
+            <p className='select-none'>{skip}/{total}</p>
+        // </Tooltip>
     )
 }

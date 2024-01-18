@@ -15,5 +15,14 @@
   "dependencies": {
     "@upgradableweb/icons": "^1.0.0",
     "@upgradableweb/tooltip": "^1.0.1"
+  },
+  "peerDependencies": {
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.7",
+    "@babel/preset-env": "^7.23.8",
+    "@babel/preset-react": "^7.23.3"
   }
 }
